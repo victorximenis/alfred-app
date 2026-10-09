@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alfred</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1b1b1f; --muted:#5d5d66; --bg:#fafafa; --line:#e3e3e8; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#ececf1; --muted:#a0a0ab; --bg:#141417; --line:#2a2a30; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width:680px; margin:0 auto; padding:48px 16px 64px; }
+  h1 { font-size:2rem; margin:0 0 4px; }
+  h2 { font-size:1.2rem; margin:40px 0 8px; padding-top:24px; border-top:1px solid var(--line); }
+  p, li { color:var(--fg); } .muted { color:var(--muted); }
+  ul { padding-left:20px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Alfred</h1>
+  <p class="muted">Assistente de voz pessoal para macOS, de uso próprio do autor.</p>
+  <p>O Alfred roda inteiramente no computador do usuário. Com autorização explícita, ele pode ler a agenda e os e-mails das contas Google e Microsoft do próprio usuário para responder perguntas por voz. O acesso é somente leitura.</p>
+
+  <h2 id="privacidade">Política de privacidade</h2>
+  <ul>
+    <li><strong>Dados acessados.</strong> Eventos da agenda e mensagens de e-mail das contas que o próprio usuário conectar, apenas para leitura (escopos <code>calendar.readonly</code> e <code>gmail.readonly</code> no Google; <code>Calendars.Read</code> e <code>Mail.Read</code> na Microsoft).</li>
+    <li><strong>Uso.</strong> Os dados são usados só para responder a pedidos do próprio usuário, no momento do pedido. Não há uso para publicidade, perfilamento ou treinamento de modelos.</li>
+    <li><strong>Armazenamento.</strong> Os tokens de acesso ficam cifrados pelo Keychain do macOS no computador do usuário. O Alfred não mantém servidor próprio e não guarda cópias de e-mails ou eventos.</li>
+    <li><strong>Compartilhamento.</strong> Trechos necessários para responder um pedido são enviados ao modelo de linguagem que o usuário configurou na própria conta. Nenhum dado é vendido ou compartilhado com terceiros.</li>
+    <li><strong>Revogação.</strong> O usuário pode desconectar a qualquer momento pelo menu do Alfred, o que apaga o token local, e revogar o acesso em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> ou <a href="https://account.live.com/consent/Manage">account.live.com/consent/Manage</a>.</li>
+  </ul>
+  <p>O uso de informações recebidas das APIs do Google segue a <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de dados do usuário dos serviços de API do Google</a>, incluindo os requisitos de uso limitado.</p>
+
+  <h2 id="termos">Termos de uso</h2>
+  <p>O Alfred é um projeto pessoal, sem fins comerciais, usado apenas pelo próprio autor. É fornecido "como está", sem garantias. Ao conectar uma conta, o usuário autoriza somente a leitura descrita acima e pode retirar essa autorização a qualquer momento.</p>
+
+  <p class="muted" style="margin-top:40px">Contato: <a href="https://github.com/victorximenis">github.com/victorximenis</a></p>
+</main>
+</body>
+</html>
